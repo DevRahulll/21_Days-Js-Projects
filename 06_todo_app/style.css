@@ -1,0 +1,100 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #000000, #0f2027, #203a43, #2c5364);
+  color: white;
+}
+h3 {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 30px;
+}
+#container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+#content {
+  display: flex;
+  gap: 30px;
+  width: 50%;
+  height: auto;
+  margin: 14px;
+  padding: 10px;
+}
+input {
+  font-size: 20px;
+  width: 100%;
+  padding: 10px;
+  font-weight: 600;
+  background: #203a43;
+  border: none;
+  color: white;
+  box-shadow: inset 2px 2px 5px #000, inset -2px -2px 5px #333;
+}
+#add-todo {
+  font-size: 24px;
+  font-weight: 500;
+  padding: 10px 12px;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background: linear-gradient(145deg, #28a745, #1e7e34);
+  box-shadow: 3px 3px 8px #000, -3px -3px 8px #3a6073;
+}
+#todos {
+  width: 50%;
+  height: auto;
+  margin: 12px;
+  padding: 10px;
+  text-align: left;
+}
+#list-display {
+  width: 50%;
+  height: auto;
+  margin: 12px;
+  padding: 10px;
+  border-radius: 8px;
+}
+#list-display li {
+  font-weight: 400;
+  list-style: none;
+  font-size: 20px;
+  padding: 8px;
+  margin: 10px;
+  background-color: #034e4b;
+  user-select: none;
+  position: relative;
+}
+ul li.checked {
+  color: #f36d6d;
+  text-decoration: line-through;
+}
+ul li span {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  line-height: 40px;
+  border-radius: 12px;
+  font-size: 50px;
+  text-align: center;
+  color: rgb(185, 24, 24);
+  cursor: pointer;
+  background: #088a83;
+}
+ul li span:hover {
+  background: #08b3aa;
+}
