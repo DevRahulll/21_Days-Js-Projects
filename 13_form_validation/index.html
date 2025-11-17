@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Form Validation</title>
+</head>
+
+<body>
+    <h1>Form Validation </h1>
+    <form novalidate>
+        <label for="firstName">FirstName :</label>
+        <input type="text" name="firstName" id="" placeholder="Ram">
+        <p class="error"></p>
+
+        <label for="lastName">LastName :</label>
+        <input type="text" name="lastName" id="" placeholder="Shukla">
+        <p class="error"></p>
+
+        <label for="email">Email :</label>
+        <input type="email" name="email" id="" placeholder="ramshukla@gmail.com">
+        <p class="error"></p>
+
+        <label for="contact">Contact :</label>
+        <input type="number" name="number" id="" placeholder="6203381123">
+        <p class="error"></p>
+
+        <label for="about">About Me:</label>
+        <textarea name="about" placeholder="Write something interesting..."></textarea>
+        <p class="error"></p>
+
+        <input type="submit" value="Submit" id="btn">
+    </form>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
