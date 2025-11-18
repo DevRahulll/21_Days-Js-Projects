@@ -28,7 +28,7 @@
 
 ## 14. Quotes Generator
 
-## 15.
+## 15. Password Generator
 
 ## 16.
 
