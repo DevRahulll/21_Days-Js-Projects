@@ -9,8 +9,47 @@
 </head>
 
 <body>
+    <div class="container">
+        <div class="header">
+            <div class="search-box">
+                <input type="text" class="inputBox" placeholder="Enter your city" />
+                <button class="fa-solid fa-magnifying-glass" id="search-button"></button>
+            </div>
+        </div>
 
+        <div class="location-not-found">
+            <h1>Opps!!! Location Not Found !</h1>
+            <img src="./assets/404.png" alt="404">
+        </div>
 
+        <div class="weather-body">
+            <img src="./assets/cloud.png" alt="weather pic" class="weather-img">
+
+            <div class="weather-box">
+                <p class="temperature"><sup>°C</sup></p>
+                <p class="description">Light rain</p>
+            </div>
+
+            <div class="weather-details">
+                <div class="humidity">
+                    <i class="fa-sharp fa-solid fa-droplet"></i>
+                    <div class="text">
+                        <span id="humidity">45%</span>
+                        <p>humidity</p>
+                    </div>
+                </div>
+                <div class="wind">
+                    <i class="fa-solid fa-wind"></i>
+                    <div class="text">
+                        <span id="wind-speed"></span>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/827b9fb6a5.js" crossorigin="anonymous"></script>
     <script src="./script.js"></script>
 </body>
 
