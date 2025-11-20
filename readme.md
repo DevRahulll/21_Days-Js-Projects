@@ -30,9 +30,9 @@
 
 ## 15. Password Generator
 
-## 16.
+## 16. Weather App
 
-## 17.
+## 17. Calendar App
 
 ## 18.
 
