@@ -1,0 +1,113 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: Helvetica, sans-serif;
+}
+html,
+body {
+  text-align: center;
+  background-color: #000000;
+  margin: 0;
+  padding: 20px;
+}
+h1 {
+  color: white;
+  margin-bottom: 10px;
+}
+#restart {
+  padding: 10px 20px;
+  background: #ffcc00;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+#restart:hover {
+  background: #ffd633;
+}
+.game-container {
+  max-width: 400px;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  padding: 10px;
+  border: 10px;
+  background-color: #e0e0e0;
+}
+.card {
+  width: 80px;
+  height: 80px;
+  background: #fff;
+  border-radius: 10px;
+  perspective: 1000px;
+  cursor: pointer;
+}
+.card-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+.card.flipped .card-inner {
+  transform: rotateY(180deg);
+}
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  backface-visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 35px;
+}
+
+.card-front {
+  background: #ffcc00;
+}
+.card-back {
+  background: white;
+  transform: rotateY(180deg);
+}
+.card.matched {
+  opacity: 0.8;
+}
+.win-message {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  z-index: 10;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s, visibility 0.5s;
+}
+.win-message.show {
+  opacity: 1;
+  visibility: visible;
+}
+#move-counter {
+  margin-bottom: 15px;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #333;
+  padding: 8px 15px;
+  border-radius: 5px;
+  background-color: #ffeaa7;
+  display: inline-block;
+}
