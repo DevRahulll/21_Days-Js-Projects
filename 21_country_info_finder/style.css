@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #ffcc70, #ff9a00);
+  display: flex;
+  justify-content: center;
+  padding: 3rem 1rem;
+}
+
+.container {
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  width: 400px;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+  margin-bottom: 0.5rem;
+}
+
+.dropdown {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #999;
+  margin: 1rem 0;
+  font-weight: bold;
+  cursor: pointer;
+}
+.dropdown option:hover {
+  background-color: #f0b93a;
+  color: #000;
+  cursor: pointer;
+}
+.info {
+  display: none;
+  margin-top: 1rem;
+}
+
+.country-flag {
+  width: 150px;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+}
+
+.details {
+  text-align: left;
+}
+
+.details p {
+  margin: 5px 0;
+}
